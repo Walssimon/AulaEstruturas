@@ -1,19 +1,15 @@
 import java.util.Stack;
 
 public class Main {
-    public static void main(String[] args) {
-        Stack<Integer> stack = new Stack<Integer>();
+    public static void main(String[] args) throws IllegalAccessException {
+        Fila<Integer> fila = new Fila<Integer>();
+        fila.enfileira(1);
+        fila.enfileira(2);
+        fila.enfileira(3);
 
-
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
-        System.out.println(stack.size());
-        System.out.println(stack);
-        System.out.println(stack.peek());
-        System.out.println(stack.pop());
-        System.out.println(stack);
-
+        System.out.println(fila.toString());
+        System.out.println(fila.desenfileirar());
+        System.out.println(fila.toString());
         }
 
 }
